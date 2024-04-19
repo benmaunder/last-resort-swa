@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar"
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages";
 import Socials from "./pages/Socials";
 import Events from "./pages/Events";
@@ -10,7 +10,6 @@ import Food from "./pages/Food";
 import DrawTool from "./pages/DrawTool";
 import Disco from "./pages/Disco";
 import NoPage from "./pages/NoPage";
-import bg from "./assets/LR background.png"
 
 function App() {
   return (
@@ -32,12 +31,5 @@ function App() {
   );
 }
 
-const BackgroundImage = () => {
-  const location = useLocation();
-
-  return (
-    <div className="background-image" style={{ backgroundImage: bg }} />
-  );
-}
 
 export default App;
